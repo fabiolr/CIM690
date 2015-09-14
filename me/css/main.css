@@ -1,0 +1,203 @@
+/*! Building Interfaces HTML5 template */
+
+
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;    
+    color: #BDB7AC;
+    }
+
+.wrapper {
+    max-width: 960px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #867D72;
+    min-height: 200px;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+    
+h1 {
+
+margin-top:0;
+border-radius: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+background-color: #BDB7AC;
+text-align: center;
+color: #867D72;
+
+        
+}
+
+article {
+    max-width: 620px;
+    border-radius: 5px;
+    background-color: #766E65;
+    padding: 10px;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+img {
+    border: 30px red; 
+    vertical-align: bottom;    
+}
+
+figure {
+
+    float:right;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    border: 5px solid #766E65;
+    background-color: #766E65;
+}
+
+aside {
+
+    float:right;
+    position: relative;
+        left: 305px;
+        top:347px;
+    width: 300px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #766E65;
+   
+    
+}
+
+
+ul {
+    list-style:circle;
+}
+
+a {
+    color: #EF5B82; 
+    text-decoration: none;
+}
+a:hover {
+        text-decoration:underline;
+  
+}
+
+
+footer {
+    
+font-size: 9px;
+    max-width: 960px;
+    margin: auto;
+    margin-top: 2px;
+    min-height: 200px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/* Mobile */
+@media only screen and (min-width: 480px) {}
+/* Intermediate */
+@media only screen and (min-width: 768px) {}
+/* Wide */
+@media only screen and (min-width: 1140px) {}
+
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
